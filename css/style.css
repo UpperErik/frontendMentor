@@ -1,0 +1,134 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  /* margin: auto;
+  padding: 60px;
+  display: flex;
+  */
+  /* grid-template-rows: repeat(2,auto); */
+  width: 1080px;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content : center;
+  transform: translate(100px); 
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.image  {
+  background-image: url(../images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  width: 300px;
+  height: 430px;
+}
+
+/* .perfume-img {
+} */
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-section {
+  /* display: grid; */
+  /* align-content: normal; */
+  /* text-align: justify; */
+  /* height: 450px; */
+  background-color: hsl(0, 0%, 100%);
+  width: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+}
+
+.text-section h2  {
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+  color: rgb(135, 135, 135);
+}
+
+.text-section h1  {
+  font-family: 'Fraunces', serif;
+  line-height: 38px;
+  font-size: 40px;
+}
+
+.text-section p {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(135, 135, 135);
+  font-size: 1em;
+  line-height: 22px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+}
+
+.prices   {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  justify-content: start;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.discount-price p{
+  color: darkgreen;
+  font-size: 2.2em;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+}
+
+.real-price p   {
+  text-decoration: line-through;
+  font-size: 2vh;
+}
+
+button  {
+  align-items: center;
+  background-color: darkgreen;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  margin-top: 16px;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 300px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover  {
+  background-color: rgb(19, 180, 19);
+  transition: all 0.6s ease;
+}
+
+@media screen and (max-width: 480px){
+  .container{
+    display: inline;
+  }
+  .image,
+  .text-section   {
+    width: auto;
+  }
+}
